@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram clone</title>
+  <link rel="icon" href="./images/Instagram_icon.png">
+  <link rel="stylesheet" href="/dist/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font-serif">
+  <!-- navbar -->
+
+  <nav class="border-b bg-white py-4 px-3">
+    <div class="flex justify-between">
+      <!-- logo -->
+
+      <img src="./images/instagram.png" alt="instagram logo" class="h-8 object-fill cursor-pointer" />
+
+      <!-- search bar -->
+      <div class="text-gray-500 relative hidden md:block">
+        <input type="search" placeholder="search"
+          class="outline-none text-center border bg-gray-100 focus:border-gray-500 rounded ml-2 px-4" />
+        <i class="fa fa-search absolute left-0 ml-2 mt-1 pl-1"></i>
+      </div>
+
+      <!-- buttons -->
+
+      <div class="space-x-3">
+        <a href="#" class="inline-block bg-blue-500 text-white font-bold px-2 py-1 rounded text-sm">Log in</a>
+        <a href="#" class="inline-block text-blue-500 font-semibold text-sm">Sign up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main content -->
+  <main class="bg-gray-100 h-screen bg-opacity-25">
+    <div class=" md:w-8/12 md:mx-auto">
+      <header class="flex flex-wrap p-4 items-center py-8 ">
+        <!-- profile image -->
+        <div class=" md:w-3/12 md:ml-16">
+          <img class="md:h-40 md:w-40 h-20 w-20 rounded-full border-2 border-pink-600 p-1" src="/images/profile.jpg" alt="">
+        </div>
+
+        <div class="md:w-7/12 w-8/12 items-center">
+          <!-- profile name and follow button -->
+          <div class=" md:flex items-center md:space-x-2 mb-4 px-4">
+            <h2 class=" text-3xl font-light inline-block">SkywardVistas</h2>
+            <a href="" class="bg-blue-500 px-2 text-center py-1 text-white text-xs font-semibold rounded block md:inline-block">follow</a>
+          </div>
+
+          <!-- profile numbers -->
+          <ul class="  md:flex hidden  space-x-8 mt-2 justify-between font-semibold list-none mb-3">
+            <li>
+              <span>9</span> Posts
+              <span>100k</span> Followers
+              <span>5K</span> Following
+            </li>
+          </ul>
+
+          <!-- profile bio -->
+          <div class="hidden md:block">
+            <h1 class="font-semibold">
+              Capturing the heights of urban beauty, one skyscraper at a time.
+            </h1>
+            <span>🏙️ | #SkywardVistas | Exploring cities</span>
+            <p>from a new perspective.</p>
+          </div>
+
+        </div>
+
+      <div>
+
+        <ul class="flex justify-around md:justify-center space-x-12 uppercase text-gray-600 border-t">
+          <li class="md:border-t md:border-gray-700">
+            <a href="" class="inline-block">
+              <i class="fas fa-th-large text-sm p-3 "></i>
+              <span class="hidden md:inline text-xs">Posts</span>
+            </a>
+          </li>
+          <li>
+            <a  class="inline-block p-2">
+              <i class="fas fa-square"></i>
+              <span class="hidden md:inline text-xs">igtv</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inline-block p-3"></a>
+              <i class="fas fa-user"></i>
+              <span class="hidden md:inline text-xs ">tagged</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- posts -->
+
+        <div class="flex flex-wrap">
+          <!-- post -->
+          <div class="w-1/3 pt-1">
+            <article class="relative bg-[100%] hover:brightness-95 transition-all">
+              <img src="./images/post1.jpg" alt="" class="w-full h-64 object-cover mx-auto">
+        
+              <i class="fas fa-square absolute right-0 top-0 text-white m-1"></i>
+              <div class="absolute top-[50%] left-[50%] translate-x-[-50%] text-transparent flex hover:text-white transition-all">
+                <i class="fas fa-heart hover:text-white"></i>
+                12K
+                <i class="fas fa-message hover:text-white"></i>
+                2K
+              </div>
+            </article>
+          </div>
+        
+          <div class="w-1/3 pt-1">
+            <article class="relative bg-[100%] hover:brightness-95 transition-all">
+              <img src="./images/post2.jpg" alt="" class="w-full h-64 object-cover mx-auto">
+        
+              <i class="fas fa-square absolute right-0 top-0 text-white m-1"></i>
+              <div class="absolute top-[50%] left-[50%] translate-x-[-50%] text-transparent flex hover:text-white transition-all">
+                <i class="fas fa-heart hover:text-white"></i>
+                23K
+                <i class="fas fa-message hover:text-white"></i>
+                5K
+              </div>
+            </article>
+          </div>
+        
+          <div class="w-1/3 pt-1">
+            <article class="relative bg-[100%] hover:brightness-95 transition-all">
+              <img src="./images/post3.jpg" alt="" class="w-full h-64 object-cover mx-auto">
+        
+              <i class="fas fa-square absolute right-0 top-0 text-white m-1"></i>
+              <div class="absolute top-[50%] left-[50%] translate-x-[-50%] text-transparent flex hover:text-white transition-all">
+                <i class="fas fa-heart hover:text-white"></i>
+                19.7K
+                <i class="fas fa-message hover:text-white"></i>
+                3K
+              </div>
+            </article>
+          </div>
+        
+          <div class="w-1/3 pt-1">
+            <article class="relative bg-[100%] hover:brightness-95 transition-all">
+              <img src="./images/post4.jpg" alt="" class="w-full h-64 object-cover mx-auto">
+        
+              <i class="fas fa-square absolute right-0 top-0 text-white m-1"></i>
+              <div class="absolute top-[50%] left-[50%] translate-x-[-50%] text-transparent flex hover:text-white transition-all">
+                <i class="fas fa-heart hover:text-white"></i>
+                2K
+                <i class="fas fa-message hover:text-white"></i>
+                500
+              </div>
+            </article>
+          </div>
+        
+          <div class="w-1/3 pt-1">
+            <article class="relative bg-[100%] hover:brightness-95 transition-all">
+              <img src="./images/post5.jpg" alt="" class="w-full h-64 object-cover mx-auto">
+        
+              <i class="fas fa-square absolute right-0 top-0 text-white m-1"></i>
+              <div class="absolute top-[50%] left-[50%] translate-x-[-50%] text-transparent flex hover:text-white transition-all">
+                <i class="fas fa-heart hover:text-white"></i>
+                22K
+                <i class="fas fa-message hover:text-white"></i>
+                2.5K
+              </div>
+            </article>
+          </div>
+        
+          <div class="w-1/3 pt-1">
+            <article class="relative bg-[100%] hover:brightness-95 transition-all">
+              <img src="./images/post6.jpg" alt="" class="w-full h-64 object-cover mx-auto">
+        
+              <i class="fas fa-square absolute right-0 top-0 text-white m-1"></i>
+              <div class="absolute top-[50%] left-[50%] translate-x-[-50%] text-transparent flex hover:text-white transition-all">
+                <i class="fas fa-heart hover:text-white"></i>
+                18K
+                <i class="fas fa-message hover:text-white"></i>
+                2.7K
+              </div>
+            </article>
+          </div>
+        
+          <div class="w-1/3 pt-1">
+            <article class="relative bg-[100%] hover:brightness-95 transition-all">
+              <img src="./images/post7.jpg" alt="" class="w-full h-64 object-cover mx-auto">
+        
+              <i class="fas fa-square absolute right-0 top-0 text-white m-1"></i>
+              <div class="absolute top-[50%] left-[50%] translate-x-[-50%] text-transparent flex hover:text-white transition-all">
+                <i class="fas fa-heart hover:text-white"></i>
+                15K
+                <i class="fas fa-message hover:text-white"></i>
+                1.5K
+              </div>
+            </article>
+          </div>
+        
+          <div class="w-1/3 pt-1">
+            <article class="relative bg-[100%] hover:brightness-95 transition-all">
+              <img src="./images/post8.jpg" alt="" class="w-full h-64 object-cover mx-auto">
+        
+              <i class="fas fa-square absolute right-0 top-0 text-white m-1"></i>
+              <div class="absolute top-[50%] left-[50%] translate-x-[-50%] text-transparent flex hover:text-white transition-all">
+                <i class="fas fa-heart hover:text-white"></i>
+                11K
+                <i class="fas fa-message hover:text-white"></i>
+                2.3K
+              </div>
+            </article>
+          </div>
+        
+          <div class="w-1/3 pt-1">
+            <article class="relative bg-[100%] hover:brightness-95 transition-all">
+              <img src="./images/post9.jpg" alt="" class="w-full h-64 object-cover mx-auto">
+        
+              <i class="fas fa-square absolute right-0 top-0 text-white m-1"></i>
+              <div class="absolute top-[50%] left-[50%] translate-x-[-50%] text-transparent flex hover:text-white transition-all">
+                <i class="fas fa-heart hover:text-white"></i>
+                7K
+                <i class="fas fa-message hover:text-white"></i>
+                1K
+              </div>
+            </article>
+          </div>
+        </div>
+        
+  </main>
+
+
+</body>
+
+</html>
